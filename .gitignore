@@ -1,0 +1,39 @@
+# Unity generated files and folders
+[Ll]ibrary/
+[Tt]emp/
+[Oo]bj/
+[Bb]uild/
+[Bb]uilds/
+[Ll]ogs/
+
+# Visual Studio & Rider
+*.csproj
+*.unityproj
+*.sln
+*.suo
+*.user
+*.userprefs
+*.pidb
+*.booproj
+*.svd
+*.pidb.meta
+
+# macOS & Windows
+.DS_Store
+Thumbs.db
+
+# Do not ignore .meta files - they are critical for project integrity
+*.meta
+
+# ProjectSettings is essential for consistent team development
+# Do not ignore this folder
+# ProjectSettings/
+
+# Packages folder is auto-generated based on manifest.json
+# We should only version the manifest file
+[Pp]ackages/
+[Ll]ocalPackages/
+
+# We only track the package manifest file, not the packages themselves
+# This is a good practice for project sharing and reproducibility.
+[Mm]anifest.json
