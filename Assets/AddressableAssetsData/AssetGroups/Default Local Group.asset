@@ -16,7 +16,17 @@ MonoBehaviour:
   m_Data:
     m_SerializedData: []
   m_GUID: 0137803bafb0bed4c82c2c35ea107470
-  m_SerializeEntries: []
+  m_SerializeEntries:
+  - m_GUID: 3da3f7ba0db00014f92ccbac3109246e
+    m_Address: PlayerStats
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 04c3cf10a8d5efa418ce9fee58646ea3
+    m_Address: TilemapStats
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
   m_ReadOnly: 0
   m_Settings: {fileID: 11400000, guid: 5ddb50be382e8ad4f9fc23b31b60305a, type: 2}
   m_SchemaSet:
