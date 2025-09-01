@@ -13,19 +13,19 @@ public class PlayerController : CreatureBase
     }
 
     // Update is called once per frame
-    public void Update()
+    private void Update()
     {
         if (m_stats == null)
             return;
 
-        m_input.x = InputManager.Instance.GetInputVector().x;
-        m_input.z = InputManager.Instance.GetInputVector().y;
+        m_input.x = InputManager.GetInputVector().x;
+        m_input.z = InputManager.GetInputVector().y;
         NormalMove(m_input);
     }
 
     public override void NormalMove(Vector3 dir)
     {
-        if (InputManager.Instance.IsInputing())
+        if (InputManager.IsInputing())
             transform.LookAt(transform.position + dir);
         transform.Translate(Vector3.forward * dir.magnitude * m_stats.moveSpeed * Time.deltaTime);
 

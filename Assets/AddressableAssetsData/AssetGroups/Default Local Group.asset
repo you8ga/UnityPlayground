@@ -27,6 +27,11 @@ MonoBehaviour:
     m_ReadOnly: 0
     m_SerializedLabels: []
     FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 2ee063dae2b47cb4c92f1d35783f1cd0
+    m_Address: DarkGStats
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
   m_ReadOnly: 0
   m_Settings: {fileID: 11400000, guid: 5ddb50be382e8ad4f9fc23b31b60305a, type: 2}
   m_SchemaSet:

@@ -1,48 +1,34 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
-public class InputManager : SingletonBase<InputManager>
+public static class InputManager
 {
-    private Vector2 m_inputVector;
+    private static Vector2 _inputVector;
 
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
-
-    public bool IsKeyPressed(KeyCode key)
+    public static bool IsKeyPressed(KeyCode key)
     {
         return Input.GetKeyDown(key);
     }
 
-    public bool IsKeyHeld(KeyCode key)
+    public static bool IsKeyHeld(KeyCode key)
     {
         return Input.GetKey(key);
     }
 
-    public bool IsKeyReleased(KeyCode key)
+    public static bool IsKeyReleased(KeyCode key)
     {
         return Input.GetKeyUp(key);
     }
 
-    public Vector2 GetInputVector()
+    public static Vector2 GetInputVector()
     {
-        m_inputVector.x = Input.GetAxis("Horizontal");
-        m_inputVector.y = Input.GetAxis("Vertical");
+        _inputVector.x = Input.GetAxis("Horizontal");
+        _inputVector.y = Input.GetAxis("Vertical");
 
-        return m_inputVector;
+        return _inputVector;
     }
 
-    public bool IsInputing()
+    public static bool IsInputing()
     {
-        return m_inputVector != Vector2.zero;
+        return _inputVector != Vector2.zero;
     }
 }

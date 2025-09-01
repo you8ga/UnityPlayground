@@ -4,7 +4,7 @@ using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.Tilemaps;
 
-public class TilemapController : MonoBehaviour
+public class TilemapController : SingletonBase<TilemapController>
 {
     #region private fields
     private TilemapStats m_tilemapStats;
@@ -30,8 +30,9 @@ public class TilemapController : MonoBehaviour
     }
     private Grid _myGrid;
     #endregion
-    public bool isReady => m_tilemapStats != null;
-    public Vector3Int cellCenter => m_myGrid.WorldToCell(transform.position);
+    public bool isReady => m_tilemapStats != null && m_allTiles.Length>0;
+    public Vector3 maxMapArea => isReady?m_myGrid.CellToWorld(m_mapArea.max) : Vector3.zero;
+
 
     [Space(10),Header("Editor Only:")]
     public Tile testTile;
@@ -41,16 +42,7 @@ public class TilemapController : MonoBehaviour
     async void Start()
     {
         m_tilemapStats = await AddressableManager.Instance.LoadAssetAsync<TilemapStats>(AddressableKey.TilemapStats);
-        Vector3Int cellCenter = m_myGrid.WorldToCell(transform.position);
-        Vector3Int cellStartPos = cellCenter - (m_tilemapStats.mapBoundSize / 2);
-        m_myGrid.cellSize = testTile.sprite.bounds.size;
-        m_mapArea = new BoundsInt(cellStartPos, m_tilemapStats.mapBoundSize);
-        m_allTiles = new TileBase[m_mapArea.size.x * m_mapArea.size.y];
-
-        for (int i = 0; i < m_allTiles.Length; i++)
-        {
-            m_allTiles[i] = testTile;
-        }
+        Init();
     }
 
     // Update is called once per frame
@@ -58,20 +50,30 @@ public class TilemapController : MonoBehaviour
     {
         if(!isReady)
             return;
+    }
+
+    private void Init()
+    {
+        m_myGrid.cellSize = testTile.sprite.bounds.size;
+        m_mapArea = new BoundsInt(-m_tilemapStats.mapBoundSize / 2, m_tilemapStats.mapBoundSize);
+        m_allTiles = new TileBase[m_mapArea.size.x * m_mapArea.size.y];
+        for (int i = 0; i < m_allTiles.Length; i++)
+        {
+            m_allTiles[i] = testTile;
+        }
         m_myTilemap.SetTilesBlock(m_mapArea, m_allTiles);
     }
 
 #if(UNITY_EDITOR)
     private void OnDrawGizmos()
     {
-        if (inspectorTilemapStats == null)
+        if (inspectorTilemapStats == null || Application.isPlaying)
             return;
 
         Gizmos.color = gizmosColor;
 
-        m_mapArea = new BoundsInt(cellCenter, inspectorTilemapStats.mapBoundSize);
-
-        Gizmos.DrawCube(cellCenter, new Vector3(testTile.sprite.bounds.size.x, 0.1f, testTile.sprite.bounds.size.y));
+        //m_mapArea = new BoundsInt(cellCenter, inspectorTilemapStats.mapBoundSize);
+        Gizmos.DrawCube(transform.position, new Vector3(testTile.sprite.bounds.size.x* testTile.sprite.bounds.size.x/2, 0.1f, testTile.sprite.bounds.size.y * testTile.sprite.bounds.size.y / 2));
     }
 #endif
 }
