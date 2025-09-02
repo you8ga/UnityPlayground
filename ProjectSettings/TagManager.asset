@@ -11,10 +11,10 @@ TagManager:
   - 
   - Water
   - UI
+  - Player
   - 
   - 
-  - 
-  - 
+  - Enemy
   - 
   - 
   - 
@@ -43,4 +43,10 @@ TagManager:
     locked: 0
   - name: Background
     uniqueID: 68446885
+    locked: 0
+  - name: Tilemap
+    uniqueID: 1794309719
+    locked: 0
+  - name: Creature
+    uniqueID: 2844474327
     locked: 0

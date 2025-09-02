@@ -22,6 +22,7 @@ public class GameStateManager : SingletonBase<GameStateManager>
     {
         if (CurrentState == newState)
             return;
+        Debug.Log($"(frame= {Time.frameCount}) Game State changed from {CurrentState} to {newState}");
         CurrentState = newState;
     }
 }

@@ -9,7 +9,7 @@ public class PlayerController : CreatureBase
     // Start is called before the first frame update
     private async void Start()
     {
-        m_stats = await AddressableManager.Instance.LoadAssetAsync<PlayerStats>(AddressableKey.PlayerStats);
+        m_stats = await AddressableUtility.LoadAssetAsync<PlayerStats>(AddressableKey.PlayerStats);
     }
 
     // Update is called once per frame
@@ -18,16 +18,29 @@ public class PlayerController : CreatureBase
         if (m_stats == null)
             return;
 
-        m_input.x = InputManager.GetInputVector().x;
-        m_input.z = InputManager.GetInputVector().y;
+        m_input.x = InputUtility.GetInputVector().x;
+        m_input.z = InputUtility.GetInputVector().y;
         NormalMove(m_input);
     }
 
     public override void NormalMove(Vector3 dir)
     {
-        if (InputManager.IsInputing())
+        if (InputUtility.IsInputing())
             transform.LookAt(transform.position + dir);
         transform.Translate(Vector3.forward * dir.magnitude * m_stats.moveSpeed * Time.deltaTime);
+    }
+
+    private void CollisionDetect(Vector3 dir)
+    {
 
     }
+
+    private void OnCollisionEnter(Collision collision)
+    {
+        if(collision.gameObject.layer == LayerMask.NameToLayer("Enemy"))
+        {
+            Debug.Log("Player Hit Enemy");
+        }
+    }
+
 }

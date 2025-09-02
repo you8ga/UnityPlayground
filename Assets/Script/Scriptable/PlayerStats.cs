@@ -4,4 +4,5 @@ using UnityEngine;
 public class PlayerStats : ScriptableObject
 {
     public float moveSpeed;
+    public LayerMask collisionLayer;
 }

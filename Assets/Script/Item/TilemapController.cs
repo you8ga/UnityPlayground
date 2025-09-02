@@ -41,7 +41,7 @@ public class TilemapController : SingletonBase<TilemapController>
     // Start is called before the first frame update
     async void Start()
     {
-        m_tilemapStats = await AddressableManager.Instance.LoadAssetAsync<TilemapStats>(AddressableKey.TilemapStats);
+        m_tilemapStats = await AddressableUtility.LoadAssetAsync<TilemapStats>(AddressableKey.TilemapStats);
         Init();
     }
 
