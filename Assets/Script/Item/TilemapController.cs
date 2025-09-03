@@ -33,16 +33,14 @@ public class TilemapController : SingletonBase<TilemapController>
     public bool isReady => m_tilemapStats != null && m_allTiles.Length>0;
     public Vector3 maxMapArea => isReady?m_myGrid.CellToWorld(m_mapArea.max) : Vector3.zero;
 
-
     [Space(10),Header("Editor Only:")]
     public Tile testTile;
     public TilemapStats inspectorTilemapStats;
     public Color gizmosColor;
     // Start is called before the first frame update
-    async void Start()
+    void Start()
     {
-        m_tilemapStats = await AddressableUtility.LoadAssetAsync<TilemapStats>(AddressableKey.TilemapStats);
-        Init();
+        LevelManager.Instance.CompleteLoading += () => Init(LevelManager.Instance.currentTilemapStats);
     }
 
     // Update is called once per frame
@@ -52,8 +50,9 @@ public class TilemapController : SingletonBase<TilemapController>
             return;
     }
 
-    private void Init()
+    public void Init(TilemapStats loadStats)
     {
+        m_tilemapStats = loadStats;
         m_myGrid.cellSize = testTile.sprite.bounds.size;
         m_mapArea = new BoundsInt(-m_tilemapStats.mapBoundSize / 2, m_tilemapStats.mapBoundSize);
         m_allTiles = new TileBase[m_mapArea.size.x * m_mapArea.size.y];

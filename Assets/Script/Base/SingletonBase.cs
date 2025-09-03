@@ -14,25 +14,36 @@ public abstract class SingletonBase<T> : MonoBehaviour where T : MonoBehaviour
             return _instance;
         }
     }
+
     protected virtual void Awake()
     {
         if (_instance == null)
         {
             _instance = this as T;
-            if (Instance.transform.root == Instance.transform)
-                DontDestroyOnLoad(this);
+            //if (Instance.transform.root == Instance.transform)
+            //    DontDestroyOnLoad(this);
         }
         else if (_instance != this)
         {
             Destroy(gameObject);
         }
     }
-    private static void CreateInstance()//if doesn't have InputManager Object, create a new instance
+    private static void CreateInstance()//if doesn't have Object, create a new instance
     {
         GameObject singletonObject = new GameObject();
         _instance = singletonObject.AddComponent<T>();
         singletonObject.name = typeof(T).ToString() + " (Singleton)";
-        if (Instance.transform.root == Instance.transform)
-            DontDestroyOnLoad(singletonObject);
+        //if (Instance.transform.root == Instance.transform)
+        //    DontDestroyOnLoad(singletonObject);
+    }
+
+    public void SetDontDestroyOnLoad()
+    {
+        DontDestroyOnLoad(this);
+    }
+
+    private void OnApplicationQuit()
+    {
+        _instance = null;
     }
 }

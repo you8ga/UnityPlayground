@@ -4,6 +4,6 @@ using UnityEngine;
 public class LevelStats : ScriptableObject
 {
     public int currentLevel;
-    public int tilemapSizeRatio;
+    public int tilemapRatio;
     public int enemyRatio;
 }

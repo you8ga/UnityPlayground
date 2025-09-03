@@ -3,16 +3,36 @@
   "WorkspaceRootPath": "D:\\UnityProject\\MyPlayground\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{A6B3CE04-3B67-4BAC-276B-B8667C53163F}|Assembly-CSharp.csproj|d:\\unityproject\\myplayground\\assets\\script\\utility\\timeutility.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A6B3CE04-3B67-4BAC-276B-B8667C53163F}|Assembly-CSharp.csproj|solutionrelative:assets\\script\\utility\\timeutility.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A6B3CE04-3B67-4BAC-276B-B8667C53163F}|Assembly-CSharp.csproj|D:\\UnityProject\\MyPlayground\\assets\\script\\creature\\darkg.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A6B3CE04-3B67-4BAC-276B-B8667C53163F}|Assembly-CSharp.csproj|solutionrelative:assets\\script\\creature\\darkg.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A6B3CE04-3B67-4BAC-276B-B8667C53163F}|Assembly-CSharp.csproj|d:\\unityproject\\myplayground\\assets\\script\\utility\\addressableutility.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A6B3CE04-3B67-4BAC-276B-B8667C53163F}|Assembly-CSharp.csproj|solutionrelative:assets\\script\\utility\\addressableutility.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A6B3CE04-3B67-4BAC-276B-B8667C53163F}|Assembly-CSharp.csproj|D:\\UnityProject\\MyPlayground\\assets\\script\\base\\addressablekey.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A6B3CE04-3B67-4BAC-276B-B8667C53163F}|Assembly-CSharp.csproj|solutionrelative:assets\\script\\base\\addressablekey.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A6B3CE04-3B67-4BAC-276B-B8667C53163F}|Assembly-CSharp.csproj|D:\\UnityProject\\MyPlayground\\assets\\script\\base\\objectpoolbase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A6B3CE04-3B67-4BAC-276B-B8667C53163F}|Assembly-CSharp.csproj|solutionrelative:assets\\script\\base\\objectpoolbase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A6B3CE04-3B67-4BAC-276B-B8667C53163F}|Assembly-CSharp.csproj|D:\\UnityProject\\MyPlayground\\assets\\script\\manager\\objectpoolmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A6B3CE04-3B67-4BAC-276B-B8667C53163F}|Assembly-CSharp.csproj|solutionrelative:assets\\script\\manager\\objectpoolmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A6B3CE04-3B67-4BAC-276B-B8667C53163F}|Assembly-CSharp.csproj|D:\\UnityProject\\MyPlayground\\assets\\script\\utility\\iasyncable.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A6B3CE04-3B67-4BAC-276B-B8667C53163F}|Assembly-CSharp.csproj|solutionrelative:assets\\script\\utility\\iasyncable.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{A6B3CE04-3B67-4BAC-276B-B8667C53163F}|Assembly-CSharp.csproj|D:\\UnityProject\\MyPlayground\\assets\\script\\manager\\levelmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{A6B3CE04-3B67-4BAC-276B-B8667C53163F}|Assembly-CSharp.csproj|solutionrelative:assets\\script\\manager\\levelmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A6B3CE04-3B67-4BAC-276B-B8667C53163F}|Assembly-CSharp.csproj|D:\\UnityProject\\MyPlayground\\assets\\script\\manager\\gamestatemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A6B3CE04-3B67-4BAC-276B-B8667C53163F}|Assembly-CSharp.csproj|solutionrelative:assets\\script\\manager\\gamestatemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A6B3CE04-3B67-4BAC-276B-B8667C53163F}|Assembly-CSharp.csproj|d:\\unityproject\\myplayground\\assets\\script\\creature\\playercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A6B3CE04-3B67-4BAC-276B-B8667C53163F}|Assembly-CSharp.csproj|solutionrelative:assets\\script\\creature\\playercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{A6B3CE04-3B67-4BAC-276B-B8667C53163F}|Assembly-CSharp.csproj|D:\\UnityProject\\MyPlayground\\assets\\script\\item\\tilemapcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -23,40 +43,32 @@
       "RelativeMoniker": "D:0:0:{A6B3CE04-3B67-4BAC-276B-B8667C53163F}|Assembly-CSharp.csproj|solutionrelative:assets\\script\\scriptable\\tilemapstats.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A6B3CE04-3B67-4BAC-276B-B8667C53163F}|Assembly-CSharp.csproj|D:\\UnityProject\\MyPlayground\\assets\\script\\creature\\darkg.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A6B3CE04-3B67-4BAC-276B-B8667C53163F}|Assembly-CSharp.csproj|solutionrelative:assets\\script\\creature\\darkg.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A6B3CE04-3B67-4BAC-276B-B8667C53163F}|Assembly-CSharp.csproj|D:\\UnityProject\\MyPlayground\\assets\\script\\creature\\playercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A6B3CE04-3B67-4BAC-276B-B8667C53163F}|Assembly-CSharp.csproj|solutionrelative:assets\\script\\creature\\playercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A6B3CE04-3B67-4BAC-276B-B8667C53163F}|Assembly-CSharp.csproj|D:\\UnityProject\\MyPlayground\\assets\\script\\base\\objectpoolbase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A6B3CE04-3B67-4BAC-276B-B8667C53163F}|Assembly-CSharp.csproj|solutionrelative:assets\\script\\base\\objectpoolbase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A6B3CE04-3B67-4BAC-276B-B8667C53163F}|Assembly-CSharp.csproj|D:\\UnityProject\\MyPlayground\\assets\\script\\base\\singletonbase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A6B3CE04-3B67-4BAC-276B-B8667C53163F}|Assembly-CSharp.csproj|solutionrelative:assets\\script\\base\\singletonbase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{A6B3CE04-3B67-4BAC-276B-B8667C53163F}|Assembly-CSharp.csproj|D:\\UnityProject\\MyPlayground\\assets\\script\\scriptable\\levelstats.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{A6B3CE04-3B67-4BAC-276B-B8667C53163F}|Assembly-CSharp.csproj|solutionrelative:assets\\script\\scriptable\\levelstats.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A6B3CE04-3B67-4BAC-276B-B8667C53163F}|Assembly-CSharp.csproj|D:\\UnityProject\\MyPlayground\\assets\\script\\base\\addressablekey.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A6B3CE04-3B67-4BAC-276B-B8667C53163F}|Assembly-CSharp.csproj|solutionrelative:assets\\script\\base\\addressablekey.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A6B3CE04-3B67-4BAC-276B-B8667C53163F}|Assembly-CSharp.csproj|D:\\UnityProject\\MyPlayground\\assets\\script\\manager\\gamestatemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A6B3CE04-3B67-4BAC-276B-B8667C53163F}|Assembly-CSharp.csproj|solutionrelative:assets\\script\\manager\\gamestatemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A6B3CE04-3B67-4BAC-276B-B8667C53163F}|Assembly-CSharp.csproj|D:\\UnityProject\\MyPlayground\\assets\\script\\scriptable\\darkgstats.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A6B3CE04-3B67-4BAC-276B-B8667C53163F}|Assembly-CSharp.csproj|solutionrelative:assets\\script\\scriptable\\darkgstats.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A6B3CE04-3B67-4BAC-276B-B8667C53163F}|Assembly-CSharp.csproj|D:\\UnityProject\\MyPlayground\\assets\\script\\base\\creaturebase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A6B3CE04-3B67-4BAC-276B-B8667C53163F}|Assembly-CSharp.csproj|solutionrelative:assets\\script\\base\\creaturebase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{A6B3CE04-3B67-4BAC-276B-B8667C53163F}|Assembly-CSharp.csproj|D:\\UnityProject\\MyPlayground\\assets\\script\\scriptable\\playerstats.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{A6B3CE04-3B67-4BAC-276B-B8667C53163F}|Assembly-CSharp.csproj|solutionrelative:assets\\script\\scriptable\\playerstats.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A6B3CE04-3B67-4BAC-276B-B8667C53163F}|Assembly-CSharp.csproj|D:\\UnityProject\\MyPlayground\\assets\\script\\base\\singletonbase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A6B3CE04-3B67-4BAC-276B-B8667C53163F}|Assembly-CSharp.csproj|solutionrelative:assets\\script\\base\\singletonbase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A6B3CE04-3B67-4BAC-276B-B8667C53163F}|Assembly-CSharp.csproj|D:\\UnityProject\\MyPlayground\\assets\\script\\utility\\timeutility.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A6B3CE04-3B67-4BAC-276B-B8667C53163F}|Assembly-CSharp.csproj|solutionrelative:assets\\script\\utility\\timeutility.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A6B3CE04-3B67-4BAC-276B-B8667C53163F}|Assembly-CSharp.csproj|D:\\UnityProject\\MyPlayground\\assets\\script\\base\\creaturebase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A6B3CE04-3B67-4BAC-276B-B8667C53163F}|Assembly-CSharp.csproj|solutionrelative:assets\\script\\base\\creaturebase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A6B3CE04-3B67-4BAC-276B-B8667C53163F}|Assembly-CSharp.csproj|D:\\UnityProject\\MyPlayground\\assets\\script\\scriptable\\darkgstats.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A6B3CE04-3B67-4BAC-276B-B8667C53163F}|Assembly-CSharp.csproj|solutionrelative:assets\\script\\scriptable\\darkgstats.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -66,7 +78,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 10,
           "Children": [
             {
               "$type": "Bookmark",
@@ -78,33 +90,84 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
+              "Title": "AddressableUtility.cs",
+              "DocumentMoniker": "D:\\UnityProject\\MyPlayground\\Assets\\Script\\Utility\\AddressableUtility.cs",
+              "RelativeDocumentMoniker": "Assets\\Script\\Utility\\AddressableUtility.cs",
+              "ToolTip": "D:\\UnityProject\\MyPlayground\\Assets\\Script\\Utility\\AddressableUtility.cs",
+              "RelativeToolTip": "Assets\\Script\\Utility\\AddressableUtility.cs",
+              "ViewState": "AgIAAAgAAAAAAAAAAAAAwBUAAABBAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-03T04:29:45.722Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "IAsyncable.cs",
+              "DocumentMoniker": "D:\\UnityProject\\MyPlayground\\Assets\\Script\\Utility\\IAsyncable.cs",
+              "RelativeDocumentMoniker": "Assets\\Script\\Utility\\IAsyncable.cs",
+              "ToolTip": "D:\\UnityProject\\MyPlayground\\Assets\\Script\\Utility\\IAsyncable.cs",
+              "RelativeToolTip": "Assets\\Script\\Utility\\IAsyncable.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAuwAUAAAAlAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-02T14:30:05.835Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "ObjectPoolManager.cs",
+              "DocumentMoniker": "D:\\UnityProject\\MyPlayground\\Assets\\Script\\Manager\\ObjectPoolManager.cs",
+              "RelativeDocumentMoniker": "Assets\\Script\\Manager\\ObjectPoolManager.cs",
+              "ToolTip": "D:\\UnityProject\\MyPlayground\\Assets\\Script\\Manager\\ObjectPoolManager.cs",
+              "RelativeToolTip": "Assets\\Script\\Manager\\ObjectPoolManager.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAABYAAABUAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-02T12:13:08.88Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "ObjectPoolBase.cs",
+              "DocumentMoniker": "D:\\UnityProject\\MyPlayground\\Assets\\Script\\Base\\ObjectPoolBase.cs",
+              "RelativeDocumentMoniker": "Assets\\Script\\Base\\ObjectPoolBase.cs",
+              "ToolTip": "D:\\UnityProject\\MyPlayground\\Assets\\Script\\Base\\ObjectPoolBase.cs",
+              "RelativeToolTip": "Assets\\Script\\Base\\ObjectPoolBase.cs",
+              "ViewState": "AgIAAAIAAAAAAAAAAAAxwBMAAAAuAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-02T05:36:43.905Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
               "Title": "TimeUtility.cs",
               "DocumentMoniker": "D:\\UnityProject\\MyPlayground\\Assets\\Script\\Utility\\TimeUtility.cs",
               "RelativeDocumentMoniker": "Assets\\Script\\Utility\\TimeUtility.cs",
               "ToolTip": "D:\\UnityProject\\MyPlayground\\Assets\\Script\\Utility\\TimeUtility.cs",
               "RelativeToolTip": "Assets\\Script\\Utility\\TimeUtility.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAARAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAA0AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-02T07:55:06.218Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-09-02T07:55:06.218Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 6,
               "Title": "LevelManager.cs",
               "DocumentMoniker": "D:\\UnityProject\\MyPlayground\\Assets\\Script\\Manager\\LevelManager.cs",
               "RelativeDocumentMoniker": "Assets\\Script\\Manager\\LevelManager.cs",
               "ToolTip": "D:\\UnityProject\\MyPlayground\\Assets\\Script\\Manager\\LevelManager.cs",
               "RelativeToolTip": "Assets\\Script\\Manager\\LevelManager.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAABAAAAAAAAAA==",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAxwBsAAAAiAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-09-02T07:46:20.897Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 11,
               "Title": "LevelStats.cs",
               "DocumentMoniker": "D:\\UnityProject\\MyPlayground\\Assets\\Script\\Scriptable\\LevelStats.cs",
               "RelativeDocumentMoniker": "Assets\\Script\\Scriptable\\LevelStats.cs",
@@ -112,23 +175,12 @@
               "RelativeToolTip": "Assets\\Script\\Scriptable\\LevelStats.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAaAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-02T07:31:57.745Z"
+              "WhenOpened": "2025-09-02T07:31:57.745Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "ObjectPoolBase.cs",
-              "DocumentMoniker": "D:\\UnityProject\\MyPlayground\\Assets\\Script\\Base\\ObjectPoolBase.cs",
-              "RelativeDocumentMoniker": "Assets\\Script\\Base\\ObjectPoolBase.cs",
-              "ToolTip": "D:\\UnityProject\\MyPlayground\\Assets\\Script\\Base\\ObjectPoolBase.cs",
-              "RelativeToolTip": "Assets\\Script\\Base\\ObjectPoolBase.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAowB0AAAAJAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-02T05:36:43.905Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 16,
               "Title": "DarkGStats.cs",
               "DocumentMoniker": "D:\\UnityProject\\MyPlayground\\Assets\\Script\\Scriptable\\DarkGStats.cs",
               "RelativeDocumentMoniker": "Assets\\Script\\Scriptable\\DarkGStats.cs",
@@ -140,79 +192,85 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 0,
               "Title": "DarkG.cs",
               "DocumentMoniker": "D:\\UnityProject\\MyPlayground\\Assets\\Script\\Creature\\DarkG.cs",
               "RelativeDocumentMoniker": "Assets\\Script\\Creature\\DarkG.cs",
               "ToolTip": "D:\\UnityProject\\MyPlayground\\Assets\\Script\\Creature\\DarkG.cs",
               "RelativeToolTip": "Assets\\Script\\Creature\\DarkG.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAjAAAAAAAAAA==",
+              "ViewState": "AgIAAAsAAAAAAAAAAAAgwBkAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-01T04:22:33.042Z"
+              "WhenOpened": "2025-09-01T04:22:33.042Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 8,
               "Title": "TilemapController.cs",
               "DocumentMoniker": "D:\\UnityProject\\MyPlayground\\Assets\\Script\\Item\\TilemapController.cs",
               "RelativeDocumentMoniker": "Assets\\Script\\Item\\TilemapController.cs",
               "ToolTip": "D:\\UnityProject\\MyPlayground\\Assets\\Script\\Item\\TilemapController.cs",
               "RelativeToolTip": "Assets\\Script\\Item\\TilemapController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAACsAAAAxAAAAAAAAAA==",
+              "ViewState": "AgIAACAAAAAAAAAAAAA3wCkAAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-31T05:12:03.986Z"
+              "WhenOpened": "2025-08-31T05:12:03.986Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 7,
               "Title": "PlayerController.cs",
               "DocumentMoniker": "D:\\UnityProject\\MyPlayground\\Assets\\Script\\Creature\\PlayerController.cs",
               "RelativeDocumentMoniker": "Assets\\Script\\Creature\\PlayerController.cs",
               "ToolTip": "D:\\UnityProject\\MyPlayground\\Assets\\Script\\Creature\\PlayerController.cs",
               "RelativeToolTip": "Assets\\Script\\Creature\\PlayerController.cs",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAAAAsAAAAqAAAAAAAAAA==",
+              "ViewState": "AgIAAAUAAAAAAAAAAAAxwBcAAAA0AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-28T07:26:52.686Z"
+              "WhenOpened": "2025-08-28T07:26:52.686Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 2,
               "Title": "AddressableKey.cs",
               "DocumentMoniker": "D:\\UnityProject\\MyPlayground\\Assets\\Script\\Base\\AddressableKey.cs",
               "RelativeDocumentMoniker": "Assets\\Script\\Base\\AddressableKey.cs",
               "ToolTip": "D:\\UnityProject\\MyPlayground\\Assets\\Script\\Base\\AddressableKey.cs",
               "RelativeToolTip": "Assets\\Script\\Base\\AddressableKey.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAyAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAyAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-31T06:04:42.617Z"
+              "WhenOpened": "2025-08-31T06:04:42.617Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 9,
               "Title": "TilemapStats.cs",
               "DocumentMoniker": "D:\\UnityProject\\MyPlayground\\Assets\\Script\\Scriptable\\TilemapStats.cs",
               "RelativeDocumentMoniker": "Assets\\Script\\Scriptable\\TilemapStats.cs",
               "ToolTip": "D:\\UnityProject\\MyPlayground\\Assets\\Script\\Scriptable\\TilemapStats.cs",
               "RelativeToolTip": "Assets\\Script\\Scriptable\\TilemapStats.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAjAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-30T04:40:10.844Z"
+              "WhenOpened": "2025-08-30T04:40:10.844Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 12,
               "Title": "GameStateManager.cs",
               "DocumentMoniker": "D:\\UnityProject\\MyPlayground\\Assets\\Script\\Manager\\GameStateManager.cs",
               "RelativeDocumentMoniker": "Assets\\Script\\Manager\\GameStateManager.cs",
               "ToolTip": "D:\\UnityProject\\MyPlayground\\Assets\\Script\\Manager\\GameStateManager.cs",
               "RelativeToolTip": "Assets\\Script\\Manager\\GameStateManager.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAQAAAAAAAAAA==",
+              "ViewState": "AgIAAAcAAAAAAAAAAAAQwBAAAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-28T08:03:08.173Z"
+              "WhenOpened": "2025-08-28T08:03:08.173Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 14,
               "Title": "PlayerStats.cs",
               "DocumentMoniker": "D:\\UnityProject\\MyPlayground\\Assets\\Script\\Scriptable\\PlayerStats.cs",
               "RelativeDocumentMoniker": "Assets\\Script\\Scriptable\\PlayerStats.cs",
@@ -230,21 +288,22 @@
               "RelativeDocumentMoniker": "Assets\\Script\\Base\\CreatureBase.cs",
               "ToolTip": "D:\\UnityProject\\MyPlayground\\Assets\\Script\\Base\\CreatureBase.cs",
               "RelativeToolTip": "Assets\\Script\\Base\\CreatureBase.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAvAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAuwAYAAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-08-28T07:27:37.285Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 10,
               "Title": "SingletonBase.cs",
               "DocumentMoniker": "D:\\UnityProject\\MyPlayground\\Assets\\Script\\Base\\SingletonBase.cs",
               "RelativeDocumentMoniker": "Assets\\Script\\Base\\SingletonBase.cs",
               "ToolTip": "D:\\UnityProject\\MyPlayground\\Assets\\Script\\Base\\SingletonBase.cs",
               "RelativeToolTip": "Assets\\Script\\Base\\SingletonBase.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAhAAAAAAAAAA==",
+              "ViewState": "AgIAABQAAAAAAAAAAAAiwCEAAAAwAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-20T06:55:51.938Z"
+              "WhenOpened": "2025-08-20T06:55:51.938Z",
+              "EditorCaption": ""
             }
           ]
         }

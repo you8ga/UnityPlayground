@@ -1,21 +1,23 @@
 using System.Collections;
 using System.Collections.Generic;
+using System.Threading.Tasks;
 using UnityEngine;
 
 public class PlayerController : CreatureBase
 {
-    private PlayerStats m_stats;
+    private PlayerStats m_playerStats;
     private Vector3 m_input;
-    // Start is called before the first frame update
-    private async void Start()
+
+    public bool IsReady => m_playerStats != null;
+    private void Start()
     {
-        m_stats = await AddressableUtility.LoadAssetAsync<PlayerStats>(AddressableKey.PlayerStats);
+        LevelManager.Instance.CompleteLoading += () => m_playerStats = LevelManager.Instance.currentPlayerStats;
     }
 
     // Update is called once per frame
     private void Update()
     {
-        if (m_stats == null)
+        if (!IsReady)
             return;
 
         m_input.x = InputUtility.GetInputVector().x;
@@ -27,7 +29,7 @@ public class PlayerController : CreatureBase
     {
         if (InputUtility.IsInputing())
             transform.LookAt(transform.position + dir);
-        transform.Translate(Vector3.forward * dir.magnitude * m_stats.moveSpeed * Time.deltaTime);
+        transform.Translate(Vector3.forward * dir.magnitude * m_playerStats.moveSpeed * Time.deltaTime);
     }
 
     private void CollisionDetect(Vector3 dir)

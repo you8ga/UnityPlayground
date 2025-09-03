@@ -1,41 +1,42 @@
 using System.Collections.Generic;
 using UnityEngine;
-public abstract class ObjectPoolBase<T> where T : Component
+public class ObjectPoolBase
 {
-    public T prefab;
-    public Queue<T> poolObjects = new Queue<T>();
+    public GameObject prefab;
+    public Queue<GameObject> poolObjects = new Queue<GameObject>();
 
-    public ObjectPoolBase(T prefab, int poolSize)
+    public ObjectPoolBase(Transform parent, GameObject prefab, int poolSize)
     {
         this.prefab = prefab;
         for (int i = 0; i < poolSize; i++)
         {
-            poolObjects.Enqueue(InitObject(prefab));
+            poolObjects.Enqueue(InitObject(parent,prefab));
         }
     }
 
-    public virtual T InitObject(T prefab)
+    public virtual GameObject InitObject(Transform parent, GameObject prefab)
     {
-        T newObject = GameObject.Instantiate(prefab);
+        GameObject newObject = GameObject.Instantiate(prefab);
+        newObject.transform.SetParent(parent);
         newObject.gameObject.SetActive(false);
         return newObject;
     }
 
     // 從物件池中獲取物件
-    public T GetPoolObject()
+    public GameObject GetPoolObject()
     {
         if (poolObjects.Count == 0)
         {
             return null;
         }
 
-        T objectToGet = poolObjects.Dequeue();
+        GameObject objectToGet = poolObjects.Dequeue();
         objectToGet.gameObject.SetActive(true);
         return objectToGet;
     }
 
     // 將物件歸還到物件池
-    public void ReturnObjectToPool(T objectToReturn)
+    public void ReturnObjectToPool(GameObject objectToReturn)
     {
         objectToReturn.gameObject.SetActive(false);
         poolObjects.Enqueue(objectToReturn);

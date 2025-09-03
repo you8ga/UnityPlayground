@@ -13,5 +13,5 @@ MonoBehaviour:
   m_Name: LevelStats
   m_EditorClassIdentifier: 
   currentLevel: 1
-  tilemapSizeRatio: 0
-  enemyRatio: 0
+  tilemapRatio: 2
+  enemyRatio: 3

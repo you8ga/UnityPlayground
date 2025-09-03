@@ -7,6 +7,7 @@ public class DarkG : CreatureBase
     protected DarkGStats m_stats;
     protected Vector3 targetVector;
     protected bool isReachingTarget => Vector3.Distance(transform.position, targetVector) <= m_stats.reachDistance;
+    public bool isReady => m_stats != null;
     public enum GState
     {
         Idle,
@@ -16,14 +17,18 @@ public class DarkG : CreatureBase
         Die
     }
     private GState m_state = GState.Idle;
-    private async void Start()
+    private void Awake()
     {
-        m_stats = await AddressableUtility.LoadAssetAsync<DarkGStats>(AddressableKey.DarkGStats);
+        LevelManager.Instance.CompleteLoading += () => m_stats = LevelManager.Instance.currentDarkGStats;
+    }
+    private void Start()
+    {
+
     }
 
     private void Update()
     {
-        if (m_stats == null)
+        if (!isReady)
             return;
 
         CheckStateConditions();
