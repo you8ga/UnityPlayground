@@ -1,0 +1,45 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bbb281ee3bf0b054c82ac2347e9e782c, type: 3}
+  m_Name: DataBase
+  m_EditorClassIdentifier: 
+  m_GroupName: DataBase
+  m_Data:
+    m_SerializedData: []
+  m_GUID: 7cc20bbdfe488c74689dd36b1ce80072
+  m_SerializeEntries:
+  - m_GUID: 3da3f7ba0db00014f92ccbac3109246e
+    m_Address: PlayerStats
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 04c3cf10a8d5efa418ce9fee58646ea3
+    m_Address: TilemapStats
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 2ee063dae2b47cb4c92f1d35783f1cd0
+    m_Address: DarkGStats
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: bf2d41416fc6f8143b9a724b12bd6802
+    m_Address: LevelStats
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  m_ReadOnly: 0
+  m_Settings: {fileID: 11400000, guid: 5ddb50be382e8ad4f9fc23b31b60305a, type: 2}
+  m_SchemaSet:
+    m_Schemas:
+    - {fileID: 11400000, guid: bcd5a18ddc5fda645ae0828f669ec301, type: 2}
+    - {fileID: 11400000, guid: 62c8d61f52cf1cd4ea186182935447cc, type: 2}

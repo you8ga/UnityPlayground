@@ -17,9 +17,15 @@ public class DarkG : CreatureBase
         Die
     }
     private GState m_state = GState.Idle;
+
+    private void InitStats()
+    {
+        transform.position = TilemapController.Instance.RandomMapXZVector();
+        m_stats = LevelManager.Instance.currentDarkGStats;
+    }
     private void Awake()
     {
-        LevelManager.Instance.CompleteLoading += () => m_stats = LevelManager.Instance.currentDarkGStats;
+        LevelManager.Instance.CompleteLoading += () => InitStats();
     }
     private void Start()
     {
@@ -66,10 +72,10 @@ public class DarkG : CreatureBase
             case GState.Idle:
                 break;
             case GState.Decide:
-                targetVector = RandomMapVector();
+                targetVector = TilemapController.Instance.RandomMapXZVector(transform.position.y);
                 break;
             case GState.Move:
-                NormalMove(GetDirection());
+                NormalMove(GetMoveDirection());
                 break;
             case GState.Attack:
                 break;
@@ -80,16 +86,7 @@ public class DarkG : CreatureBase
         }
     }
 
-    protected Vector3 RandomMapVector()
-    {
-        float xRange = Mathf.Round(TilemapController.Instance.maxMapArea.x);
-        float zRange = Mathf.Round(TilemapController.Instance.maxMapArea.z);
-
-        Vector3 randomPos = new Vector3(Random.Range(-xRange / 2, xRange / 2),transform.position.y,Random.Range(-zRange / 2, zRange / 2));
-        return randomPos;
-    }
-
-    protected Vector3 GetDirection()
+    protected Vector3 GetMoveDirection()
     {
         Vector3 dir = (targetVector - transform.position).normalized;
         return dir;

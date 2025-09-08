@@ -61,6 +61,44 @@ public class TilemapController : SingletonBase<TilemapController>
             m_allTiles[i] = testTile;
         }
         m_myTilemap.SetTilesBlock(m_mapArea, m_allTiles);
+        CreateEdgeBlock();
+    }
+
+    private void CreateEdgeBlock()
+    {
+        float yMapLength = m_myGrid.cellSize.x * m_tilemapStats.mapBoundSize.x;
+        float xMapLength = m_myGrid.cellSize.y * m_tilemapStats.mapBoundSize.y;
+        float offset = 0.5f;
+
+        for (int zDir = -1; zDir < 2; zDir+=2)
+        {
+            GameObject zEdgeBlock = GameObject.CreatePrimitive(PrimitiveType.Cube);
+            zEdgeBlock.layer = LayerMask.NameToLayer("Block");
+            zEdgeBlock.transform.SetParent(transform);
+            zEdgeBlock.GetComponent<MeshRenderer>().enabled = false;
+
+            zEdgeBlock.transform.position = transform.position + (xMapLength/2 + offset) * Vector3.forward * zDir;
+            zEdgeBlock.transform.localScale = new Vector3(xMapLength, xMapLength, 1);
+        }
+
+        for (int xDir = -1; xDir < 2; xDir += 2)
+        {
+            GameObject xEdgeBlock = GameObject.CreatePrimitive(PrimitiveType.Cube);
+            xEdgeBlock.layer = LayerMask.NameToLayer("Block");
+            xEdgeBlock.transform.SetParent(transform);
+            xEdgeBlock.GetComponent<MeshRenderer>().enabled = false;
+
+            xEdgeBlock.transform.position = transform.position + (yMapLength / 2 + offset) * Vector3.right * xDir;
+            xEdgeBlock.transform.localScale = new Vector3(1, yMapLength, yMapLength);
+        }
+    }
+    public Vector3 RandomMapXZVector(float yValue = 0)
+    {
+        float xRange = Mathf.Round(Instance.maxMapArea.x);
+        float zRange = Mathf.Round(Instance.maxMapArea.z);
+
+        Vector3 randomPos = new Vector3(Random.Range(-xRange / 2, xRange / 2), yValue, Random.Range(-zRange / 2, zRange / 2));
+        return randomPos;
     }
 
 #if(UNITY_EDITOR)

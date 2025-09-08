@@ -23,16 +23,15 @@ public class ObjectPoolBase
     }
 
     // 從物件池中獲取物件
-    public GameObject GetPoolObject()
+    public void ActivePoolObject()
     {
         if (poolObjects.Count == 0)
         {
-            return null;
+            return;
         }
 
-        GameObject objectToGet = poolObjects.Dequeue();
-        objectToGet.gameObject.SetActive(true);
-        return objectToGet;
+        poolObjects.Peek().SetActive(true);
+        poolObjects.Dequeue();
     }
 
     // 將物件歸還到物件池

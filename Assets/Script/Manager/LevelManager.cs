@@ -11,10 +11,12 @@ public class LevelManager : SingletonBase<LevelManager>
     public DarkGStats currentDarkGStats;
     public TilemapStats currentTilemapStats;
     public Action CompleteLoading;
+    
     protected override async void Awake()
     {
         base.Awake();
         await InitLevel();
+
     }
 
     public async Task InitLevel()
@@ -26,5 +28,21 @@ public class LevelManager : SingletonBase<LevelManager>
         int poolSize = currentLevelStats.enemyRatio * currentLevelStats.currentLevel;
         await ObjectPoolManager.Instance.CreateCreaturePool(AddressableKey.DarkGKey, poolSize);
         CompleteLoading?.Invoke();
+        LevelStart();
+        Debug.Log("Level Manager: Level Init Complete");
     }
+
+    public void LevelStart()
+    {
+        for (int i = 0; i < currentLevelStats.enemyRatio * currentLevelStats.currentLevel; i++)
+        {
+            ObjectPoolManager.Instance.darkGPool.ActivePoolObject();
+        }
+    }
+
+    private void OnDestroy()
+    {
+        CompleteLoading = null;
+    }
+
 }

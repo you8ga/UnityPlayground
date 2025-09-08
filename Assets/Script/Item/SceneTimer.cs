@@ -2,8 +2,11 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class TimeUtility : MonoBehaviour
+public class SceneTimer : MonoBehaviour
 {
+    //[Header("Editor Only:")]
+    public float timerDuration = 0f;
+    
     // Start is called before the first frame update
     void Start()
     {
