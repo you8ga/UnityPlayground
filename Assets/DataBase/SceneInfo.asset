@@ -9,7 +9,8 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 413b2db3471e98e4b963ea7db9fccaac, type: 3}
-  m_Name: TilemapStats
+  m_Script: {fileID: 11500000, guid: 81428d92a535d094baf75ea9baa9c85d, type: 3}
+  m_Name: SceneInfo
   m_EditorClassIdentifier: 
-  mapBoundSize: {x: 2, y: 2, z: 1}
+  mainMenu: MainMenu
+  gameScene: GameScene

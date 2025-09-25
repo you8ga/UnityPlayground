@@ -1,10 +1,12 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using static GlobalEventUtility;
+using static UnityEngine.RuleTile.TilingRuleOutput;
 
 public class DarkG : CreatureBase
 {
-    protected DarkGStats m_stats;
+    protected DarkGData m_stats;
     protected Vector3 targetVector;
     protected bool isReachingTarget => Vector3.Distance(transform.position, targetVector) <= m_stats.reachDistance;
     public bool isReady => m_stats != null;
@@ -18,14 +20,12 @@ public class DarkG : CreatureBase
     }
     private GState m_state = GState.Idle;
 
-    private void InitStats()
-    {
-        transform.position = TilemapController.Instance.RandomMapXZVector();
-        m_stats = LevelManager.Instance.currentDarkGStats;
-    }
+
     private void Awake()
     {
-        LevelManager.Instance.CompleteLoading += () => InitStats();
+        //SceneDataManager.Instance.DataLoadingIsCompleted += InitStats;
+        TilemapController.Instance.OnMapReady += InitStartPosition;
+        InitStats();
     }
     private void Start()
     {
@@ -40,12 +40,10 @@ public class DarkG : CreatureBase
         CheckStateConditions();
         StateAction(m_state);
     }
-    public override void NormalMove(Vector3 dir)
+    private void InitStats()
     {
-        transform.LookAt(transform.position + dir);
-        transform.Translate(Vector3.forward * dir.magnitude * m_stats.moveSpeed * Time.deltaTime);
+        m_stats = SceneDataManager.Instance.currentDarkGStats;
     }
-
     private void CheckStateConditions()
     {
         if (m_state == GState.Idle)
@@ -61,7 +59,7 @@ public class DarkG : CreatureBase
         if (m_state == newState)
             return;
 
-        Debug.Log($"(frame = [{Time.frameCount}]) Change [{gameObject.name}] State from [{m_state}] to [{newState}].");
+        //Debug.Log($"(frame = [{Time.frameCount}]) Change [{gameObject.name}] State from [{m_state}] to [{newState}].");
         m_state = newState;
     }
 
@@ -75,7 +73,9 @@ public class DarkG : CreatureBase
                 targetVector = TilemapController.Instance.RandomMapXZVector(transform.position.y);
                 break;
             case GState.Move:
-                NormalMove(GetMoveDirection());
+                var dir = GetMoveDirection();
+                OnLookAtFront(dir);
+                OnMove(dir.magnitude *Vector3.forward * m_stats.moveSpeed * Time.deltaTime);
                 break;
             case GState.Attack:
                 break;
@@ -92,6 +92,16 @@ public class DarkG : CreatureBase
         return dir;
     }
 
+    private void InitStartPosition()
+    {
+        Vector3 startPos = TilemapController.Instance.RandomMapXZVector();
+        while (TilemapController.Instance.IsStartZone(TilemapController.Instance.GetMapCenter(), startPos, 2f))
+        {
+            startPos = TilemapController.Instance.RandomMapXZVector();
+            //Debug.Log($"ReRandom Pos: {startPos}");
+        }
+        transform.position = startPos;
+    }
     private void OnDrawGizmos()
     {
         if(!Application.isPlaying)

@@ -11,7 +11,7 @@ public static class AddressableUtility
 
     public static async Task<T> LoadAssetAsync<T>(string address)
     {
-        Debug.Log($"LoadAsset by Addressable Key: {address}");
+        Debug.Log($"({Time.frameCount}) LoadAsset by Addressable Key: {address}");
 
         if (loadedAssets.ContainsKey(address))
             return (T)loadedAssets[address];

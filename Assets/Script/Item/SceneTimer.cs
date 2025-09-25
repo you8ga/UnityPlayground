@@ -1,26 +1,48 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
-public class SceneTimer : MonoBehaviour
+public class SceneTimer
 {
-    //[Header("Editor Only:")]
-    public float timerDuration = 0f;
-    
-    // Start is called before the first frame update
-    void Start()
+    private float timerDuration;
+    private float m_currentTime = 0f;
+    public bool IsCounting { get; private set; }
+    public bool HasFinished => m_currentTime>= timerDuration;
+
+    public SceneTimer(float duration, bool startCounting = true)
     {
-        
+        timerDuration = duration;
+        IsCounting = startCounting;
+    }
+    public void RenewTimer(float duration)
+    {
+        timerDuration = duration;
+        m_currentTime = 0;
     }
 
-    // Update is called once per frame
-    void Update()
+    public void UpdateTime()
     {
-        
+        if (IsCounting && !HasFinished)
+            m_currentTime += Time.deltaTime;
     }
 
-    public struct Timer
+    public void StartTimer()
     {
-        
+        m_currentTime = 0f;
+        IsCounting = true;
+        Debug.Log($"Start Timer, Current Time = {m_currentTime}/ {timerDuration}");
+    }
+
+    public void PauseTimer()
+    {
+        IsCounting = false;
+        Debug.Log($"Pause Timer, Current Time = {m_currentTime}/ {timerDuration}");
+    }
+
+    public void ResumeTimer()
+    {
+        if (!HasFinished)
+        {
+            IsCounting = true;
+            Debug.Log($"Resume Timer, Current Time = {m_currentTime}/ {timerDuration}");
+        }
     }
 }
