@@ -45,7 +45,7 @@ public class PlayerController : CreatureBase
         if (!IsReady)
             return;
 
-        m_rigidbody.velocity = Vector3.zero;
+        m_rigidbody.linearVelocity = Vector3.zero;
     }
 
     // Update is called once per frame
